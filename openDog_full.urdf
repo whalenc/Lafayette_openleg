@@ -1,10 +1,6 @@
-# openDog_Leg
-
 <?xml version="1.0"?>
 <robot name = "opendog">
 
-<!-- CTRL + Backslash to comment -->
-<!-- Child's COG is referenced from the parent's origin -->
 
 <!-- gazebo plugins go here -->
     <gazebo>
@@ -13,7 +9,7 @@
         </plugin>
     </gazebo>
 
- <material name="blue">
+	<material name="blue">
         <color rgba="0 0 0.8 1"/>
     </material>
 
@@ -39,13 +35,13 @@
 
 
     <link name = "openDog_body">
-     <visual>
-       <origin xyz = "0 0 0.7" rpy = "0 0 0"/>
-       <geometry>
-         <box size = "0.31 0.881 0.195"/>
-       </geometry>
-       <material name = "blue"/>
-     </visual>
+    	<visual>
+    		<origin xyz = "0 0 0.7" rpy = "0 0 0"/>
+    		<geometry>
+    			<box size = "0.31 0.881 0.195"/>
+    		</geometry>
+    		<material name = "blue"/>
+    	</visual>
         <collision>
             <origin xyz = "0 0 0.7" rpy = "0 0 0"/>
             <geometry>
@@ -87,13 +83,13 @@
     </link>
 
     <link name = "hip_tube_1">
-     <visual>
-       <origin xyz = "0.0 0.0 0.0" rpy = "0 1.5708 0"/>
-       <geometry>
-         <cylinder length = "0.165" radius = "0.05715"/>
-       </geometry>
-       <material name = "green"/>
-     </visual>
+    	<visual>
+    		<origin xyz = "0.0 0.0 0.0" rpy = "0 1.5708 0"/>
+    		<geometry>
+    			<cylinder length = "0.165" radius = "0.05715"/>
+    		</geometry>
+    		<material name = "green"/>
+    	</visual>
         <collision>
             <origin xyz = "0.0 0.0 0.0" rpy = "0 1.5708 0"/>
             <geometry>
@@ -111,13 +107,13 @@
     </link>
 
     <link name = "hip_tube_2">
-     <visual>
-       <origin xyz = "0.0 0.0 0.0" rpy = "0 1.5708 0"/>
-       <geometry>
-         <cylinder length = "0.165" radius = "0.05715"/>
-       </geometry>
-       <material name = "green"/>
-     </visual>
+    	<visual>
+    		<origin xyz = "0.0 0.0 0.0" rpy = "0 1.5708 0"/>
+    		<geometry>
+    			<cylinder length = "0.165" radius = "0.05715"/>
+    		</geometry>
+    		<material name = "green"/>
+    	</visual>
         <collision>
             <origin xyz = "0.0 0.0 0.0" rpy = "0 1.5708 0"/>
             <geometry>
@@ -135,13 +131,13 @@
     </link>
 
     <link name = "hip_tube_3">
-     <visual>
-       <origin xyz = "0.0 0.0 0.0" rpy = "0 1.5708 0"/>
-       <geometry>
-         <cylinder length = "0.165" radius = "0.05715"/>
-       </geometry>
-       <material name = "green"/>
-     </visual>
+    	<visual>
+    		<origin xyz = "0.0 0.0 0.0" rpy = "0 1.5708 0"/>
+    		<geometry>
+    			<cylinder length = "0.165" radius = "0.05715"/>
+    		</geometry>
+    		<material name = "green"/>
+    	</visual>
         <collision>
             <origin xyz = "0.0 0.0 0.0" rpy = "0 1.5708 0"/>
             <geometry>
@@ -159,13 +155,13 @@
     </link>
 
     <link name = "hip_tube_4">
-     <visual>
-       <origin xyz = "0.0 0.0 0.0" rpy = "0 1.5708 0"/>
-       <geometry>
-         <cylinder length = "0.165" radius = "0.05715"/>
-       </geometry>
-       <material name = "green"/>
-     </visual>
+    	<visual>
+    		<origin xyz = "0.0 0.0 0.0" rpy = "0 1.5708 0"/>
+    		<geometry>
+    			<cylinder length = "0.165" radius = "0.05715"/>
+    		</geometry>
+    		<material name = "green"/>
+    	</visual>
         <collision>
             <origin xyz = "0.0 0.0 0.0" rpy = "0 1.5708 0"/>
             <geometry>
@@ -182,20 +178,20 @@
     </inertial>
     </link>
 
+	
 
 
 
+	
 
-
-
- <link name = "lower_extrusion_leg1">
-   <visual>
-     <origin xyz = "0.0 0.155 0.0" rpy = "1.5708 3.14 0"/>
-     <geometry>
-       <box size = "0.02 0.04 0.31"/>
-     </geometry>
-     <material name = "grey"/>
-   </visual>
+	<link name = "lower_extrusion_leg1">
+		<visual>
+			<origin xyz = "0.0 0.155 0.0" rpy = "1.5708 3.14 0"/>
+			<geometry>
+			 	<box size = "0.02 0.04 0.31"/>
+			</geometry>
+			<material name = "grey"/>
+		</visual>
         <collision>
             <origin xyz = "0.0 0.155 0.0" rpy = "1.5708 3.14 0"/>
             <geometry>
@@ -210,16 +206,16 @@
         iyy="0.0156050666667" iyz="0.0"
         izz="9.26666666667e-05"/>
     </inertial>
- </link>
+	</link>
 
- <link name = "lower_extrusion_leg2">
-   <visual>
-     <origin xyz = "0.0 0.155 0.0" rpy = "1.5708 3.14 0"/>
-     <geometry>
-       <box size = "0.02 0.04 0.31"/>
-     </geometry>
-     <material name = "grey"/>
-   </visual>
+	<link name = "lower_extrusion_leg2">
+		<visual>
+			<origin xyz = "0.0 0.155 0.0" rpy = "1.5708 3.14 0"/>
+			<geometry>
+			 	<box size = "0.02 0.04 0.31"/>
+			</geometry>
+			<material name = "grey"/>
+		</visual>
         <collision>
             <origin xyz = "0.0 0.155 0.0" rpy = "1.5708 3.14 0"/>
             <geometry>
@@ -236,16 +232,16 @@
         izz="9.26666666667e-05"/>
     </inertial>
 
- </link>
+	</link>
 
- <link name = "lower_extrusion_leg3">
-   <visual>
-     <origin xyz = "0.0 0.155 0.0" rpy = "1.5708 3.14 0"/>
-     <geometry>
-       <box size = "0.02 0.04 0.31"/>
-     </geometry>
-     <material name = "grey"/>
-   </visual>
+	<link name = "lower_extrusion_leg3">
+		<visual>
+			<origin xyz = "0.0 0.155 0.0" rpy = "1.5708 3.14 0"/>
+			<geometry>
+			 	<box size = "0.02 0.04 0.31"/>
+			</geometry>
+			<material name = "grey"/>
+		</visual>
         <collision>
             <origin xyz = "0.0 0.155 0.0" rpy = "1.5708 3.14 0"/>
             <geometry>
@@ -260,16 +256,16 @@
         iyy="0.0156050666667" iyz="0.0"
         izz="9.26666666667e-05"/>
     </inertial>
- </link>
+	</link>
 
- <link name = "lower_extrusion_leg4">
-   <visual>
-     <origin xyz = "0.0 0.155 0.0" rpy = "1.5708 3.14 0"/>
-     <geometry>
-       <box size = "0.02 0.04 0.31"/>
-     </geometry>
-     <material name = "grey"/>
-   </visual>
+	<link name = "lower_extrusion_leg4">
+		<visual>
+			<origin xyz = "0.0 0.155 0.0" rpy = "1.5708 3.14 0"/>
+			<geometry>
+			 	<box size = "0.02 0.04 0.31"/>
+			</geometry>
+			<material name = "grey"/>
+		</visual>
         <collision>
             <origin xyz = "0.0 0.155 0.0" rpy = "1.5708 3.14 0"/>
             <geometry>
@@ -284,17 +280,17 @@
         iyy="0.0156050666667" iyz="0.0"
         izz="9.26666666667e-05"/>
     </inertial>
- </link>
+	</link>
+	
 
-
- <link name = "upper_extrusion_leg1">
-   <visual>
-     <origin xyz = "0.0 0.195 0.0" rpy = "1.5708 0 0"/>
-     <geometry>
-       <box size = "0.02 0.06 0.39"/>
-     </geometry>
-     <material name = "red"/>
-   </visual>
+	<link name = "upper_extrusion_leg1">
+		<visual>
+			<origin xyz = "0.0 0.195 0.0" rpy = "1.5708 0 0"/>
+			<geometry>
+				<box size = "0.02 0.06 0.39"/>
+			</geometry>
+			<material name = "red"/>
+		</visual>
         <collision>
             <origin xyz = "0.0 0.195 0.0" rpy = "1.5708 0 0"/>
             <geometry>
@@ -310,16 +306,16 @@
         iyy="0.000336333333333" iyz="0.0"
         izz="0.0128227083333"/>
     </inertial>
- </link>
+	</link>
 
- <link name = "upper_extrusion_leg2">
-   <visual>
-     <origin xyz = "0.0 0.195 0.0" rpy = "1.5708 0 0"/>
-     <geometry>
-       <box size = "0.02 0.06 0.39"/>
-     </geometry>
-     <material name = "red"/>
-   </visual>
+	<link name = "upper_extrusion_leg2">
+		<visual>
+			<origin xyz = "0.0 0.195 0.0" rpy = "1.5708 0 0"/>
+			<geometry>
+				<box size = "0.02 0.06 0.39"/>
+			</geometry>
+			<material name = "red"/>
+		</visual>
         <collision>
             <origin xyz = "0.0 0.195 0.0" rpy = "1.5708 0 0"/>
             <geometry>
@@ -335,16 +331,16 @@
         iyy="0.000336333333333" iyz="0.0"
         izz="0.0128227083333"/>
     </inertial>
- </link>
+	</link>
 
- <link name = "upper_extrusion_leg3">
-   <visual>
-     <origin xyz = "0.0 0.195 0.0" rpy = "1.5708 0 0"/>
-     <geometry>
-       <box size = "0.02 0.06 0.39"/>
-     </geometry>
-     <material name = "red"/>
-   </visual>
+	<link name = "upper_extrusion_leg3">
+		<visual>
+			<origin xyz = "0.0 0.195 0.0" rpy = "1.5708 0 0"/>
+			<geometry>
+				<box size = "0.02 0.06 0.39"/>
+			</geometry>
+			<material name = "red"/>
+		</visual>
         <collision>
             <origin xyz = "0.0 0.195 0.0" rpy = "1.5708 0 0"/>
             <geometry>
@@ -360,17 +356,17 @@
         iyy="0.000336333333333" iyz="0.0"
         izz="0.0128227083333"/>
     </inertial>
- </link>
+	</link>
 
 
- <link name = "upper_extrusion_leg4">
-   <visual>
-     <origin xyz = "0.0 0.195 0.0" rpy = "1.5708 0 0"/>
-     <geometry>
-       <box size = "0.02 0.06 0.39"/>
-     </geometry>
-     <material name = "red"/>
-   </visual>
+	<link name = "upper_extrusion_leg4">
+		<visual>
+			<origin xyz = "0.0 0.195 0.0" rpy = "1.5708 0 0"/>
+			<geometry>
+				<box size = "0.02 0.06 0.39"/>
+			</geometry>
+			<material name = "red"/>
+		</visual>
         <collision>
             <origin xyz = "0.0 0.195 0.0" rpy = "1.5708 0 0"/>
             <geometry>
@@ -386,95 +382,15 @@
         iyy="0.000336333333333" iyz="0.0"
         izz="0.0128227083333"/>
     </inertial>
-  </link>
 
-<!-- knee links  -->
-  <link name = "knee1">
-    <visual>
-      <collision>
-        <origin xyz = "" rpy = ""/>
-        <geometry>
-          <box size = ".04 0.0303 .13"/>
-          </geometry>
-          <material name = "red"/>
-        </collision>
-    <inertial>
-    <origin xyz = "" rpy = ""/>
-    <!-- mass value in kg -->
-    <mass value="187.164"/>
-    <inertia
-      ixx="" ixy="" ixz=""
-      iyy="" iyz=""
-      izz=""/>
-    </inertial>
- </link>
-
- <link name = "knee2">
-   <visual>
-     <collision>
-       <origin xyz = "" rpy = ""/>
-       <geometry>
-         <box size = ".04 0.0303 .13"/>
-         </geometry>
-         <material name = "red"/>
-       </collision>
-   <inertial>
-   <origin xyz = "" rpy = ""/>
-   <!-- mass value in kg -->
-   <mass value="187.164"/>
-   <inertia
-     ixx="" ixy="" ixz=""
-     iyy="" iyz=""
-     izz=""/>
-   </inertial>
-</link>
-
-<link name = "knee3">
-  <visual>
-    <collision>
-      <origin xyz = "" rpy = ""/>
-      <geometry>
-        <box size = ".04 0.0303 .13"/>
-        </geometry>
-        <material name = "red"/>
-      </collision>
-  <inertial>
-  <origin xyz = "" rpy = ""/>
-  <!-- mass value in kg -->
-  <mass value="187.164"/>
-  <inertia
-    ixx="" ixy="" ixz=""
-    iyy="" iyz=""
-    izz=""/>
-  </inertial>
-</link>
-
-<link name = "knee4">
-  <visual>
-    <collision>
-      <origin xyz = "" rpy = ""/>
-      <geometry>
-        <box size = ".04 0.0303 .13"/>
-        </geometry>
-        <material name = "red"/>
-      </collision>
-  <inertial>
-  <origin xyz = "" rpy = ""/>
-  <!-- mass value in kg -->
-  <mass value="187.164"/>
-  <inertia
-    ixx="" ixy="" ixz=""
-    iyy="" iyz=""
-    izz=""/>
-  </inertial>
-</link>
+	</link>
 
     <joint name = "dummy_joint" type = "fixed">
         <parent link = "openDog_body"/>
         <child link  = "dummy_mass"/>
         <origin xyz = "0 0 0.7" rpy = "0 0 0"/>
     </joint>
-
+    
     <joint name="hip_joint_1" type="fixed">
         <parent link="openDog_body"/>
         <child link="hip_tube_1"/>
@@ -580,10 +496,10 @@
         <parent link = "upper_extrusion_leg1"/>
         <child link = "lower_extrusion_leg1"/>
         <origin xyz="0 0.39 0" rpy="0 0 0"/>
-
+        
         <limit effort="5000"  lower="1.352" upper="2.8715" velocity="1.0"/>
         <axis xyz="0 0 1"/>
-
+        
     </joint>
 
     <transmission name="simple_trans4">
@@ -603,7 +519,7 @@
         <origin xyz="0 0.39 0" rpy="0 0 0"/>
         <limit effort="5000"  lower="1.352" upper="2.8715" velocity="1.0"/>
         <axis xyz="0 0 1"/>
-
+        
     </joint>
 
     <transmission name="simple_trans5">
@@ -657,5 +573,5 @@
   </actuator>
 </transmission>
 
-
+	
 </robot>
