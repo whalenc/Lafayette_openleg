@@ -381,10 +381,323 @@
     </inertial>
 	</link>
 
+  <!-- knee links  -->
+    <link name = "knee1">
+      <visual>
+        <origin xyz = "" rpy = "0 0 0"/>
+        <geometry>
+          <box size = ".04 0.0303 .13"/>
+          </geometry>
+          <material name = "red"/>
+      </visual>
+        <collision>
+          <origin xyz = "" rpy = "0 0 0"/>
+          <geometry>
+            <box size = ".04 0.0303 .13"/>
+            </geometry>
+            <material name = "red"/>
+          </collision>
+      <inertial>
+      <origin xyz = "" rpy = ""/>
+      <mass value="0.187164"/>
+      <inertia
+        ixx="" ixy="" ixz=""
+        iyy="" iyz=""
+        izz=""/>
+      </inertial>
+   </link>
+
+   <!-- <link name = "knee2">
+     <visual>
+     <origin xyz = "" rpy = ""/>
+     <geometry>
+       <box size = ".04 0.0303 .13"/>
+       </geometry>
+       <material name = "red"/>
+     </visual>
+       <collision>
+         <origin xyz = "" rpy = ""/>
+         <geometry>
+           <box size = ".04 0.0303 .13"/>
+           </geometry>
+           <material name = "red"/>
+         </collision>
+     <inertial>
+     <origin xyz = "" rpy = ""/>
+     <mass value="0.187164"/>
+     <inertia
+       ixx="" ixy="" ixz=""
+       iyy="" iyz=""
+       izz=""/>
+     </inertial>
+  </link>
+
+  <link name = "knee3">
+    <visual>
+    <origin xyz = "" rpy = ""/>
+    <geometry>
+      <box size = ".04 0.0303 .13"/>
+      </geometry>
+      <material name = "red"/>
+    </visual>
+      <collision>
+        <origin xyz = "" rpy = ""/>
+        <geometry>
+          <box size = ".04 0.0303 .13"/>
+          </geometry>
+          <material name = "red"/>
+        </collision>
+    <inertial>
+    <origin xyz = "" rpy = ""/>
+    <mass value="0.187164"/>
+    <inertia
+      ixx="" ixy="" ixz=""
+      iyy="" iyz=""
+      izz=""/>
+    </inertial>
+  </link>
+
+  <link name = "knee4">
+    <visual>
+    <origin xyz = "" rpy = ""/>
+    <geometry>
+      <box size = ".04 0.0303 .13"/>
+      </geometry>
+      <material name = "red"/>
+    </visual>
+      <collision>
+        <origin xyz = "" rpy = ""/>
+        <geometry>
+          <box size = ".04 0.0303 .13"/>
+          </geometry>
+          <material name = "red"/>
+        </collision>
+    <inertial>
+    <origin xyz = "" rpy = ""/>
+    <mass value="0.187164"/>
+    <inertia
+      ixx="" ixy="" ixz=""
+      iyy="" iyz=""
+      izz=""/>
+    </inertial>
+  </link> -->
+
+
+  <!-- Slide Block Links -->
+  <link name = "SlideBlock1.1">
+    <visual>
+      <origin xyz = "" rpy = ""/>
+      <geometry>
+        <box size = ".078 0.0534 0.044"/>
+        </geometry>
+        <material name = "red"/>
+      </visual>
+      <collision>
+        <origin xyz = "" rpy = ""/>
+        <geometry>
+          <box size = ".078 0.0534 0.044"/>
+          </geometry>
+          <material name = "red"/>
+        </collision>
+    <inertial>
+    <origin xyz = "" rpy = ""/>
+    <mass value="0.0251964"/>
+    <inertia
+      ixx="" ixy="" ixz=""
+      iyy="" iyz=""
+      izz=""/>
+    </inertial>
+  </link>
+
+  <link name = "SlideBlock1.2">
+    <visual>
+      <origin xyz = "" rpy = ""/>
+      <geometry>
+        <box size = ".078 0.0534 0.044"/>
+      </geometry>
+        <material name = "red"/>
+      </visual>
+      <collision>
+        <origin xyz = "" rpy = ""/>
+        <geometry>
+          <box size = ".078 0.0534 0.044"/>
+        </geometry>
+          <material name = "red"/>
+      </collision>
+    <inertial>
+    <origin xyz = "" rpy = ""/>
+    <mass value="0.0251964"/>
+    <inertia
+      ixx="" ixy="" ixz=""
+      iyy="" iyz=""
+      izz=""/>
+    </inertial>
+  </link>
+
+  <!-- <link name = "SlideBlock2.1">
+    <visual>
+    <origin xyz = "" rpy = ""/>
+    <geometry>
+      <box size = ".078 0.0534 0.044"/>
+      </geometry>
+      <material name = "red"/>
+    </visual>
+      <collision>
+        <origin xyz = "" rpy = ""/>
+        <geometry>
+          <box size = ".078 0.0534 0.044"/>
+          </geometry>
+          <material name = "red"/>
+        </collision>
+    <inertial>
+    <origin xyz = "" rpy = ""/>
+    <mass value="0.0251964"/>
+    <inertia
+      ixx="" ixy="" ixz=""
+      iyy="" iyz=""
+      izz=""/>
+    </inertial>
+  </link>
+
+  <link name = "SlideBlock2.2">
+    <visual>
+    <origin xyz = "" rpy = ""/>
+    <geometry>
+      <box size = ".078 0.0534 0.044"/>
+    </geometry>
+      <material name = "red"/>
+    </visual>
+      <collision>
+        <origin xyz = "" rpy = ""/>
+        <geometry>
+          <box size = ".078 0.0534 0.044"/>
+        </geometry>
+          <material name = "red"/>
+        </collision>
+    <inertial>
+    <origin xyz = "" rpy = ""/>
+    <mass value="0.0251964"/>
+    <inertia
+      ixx="" ixy="" ixz=""
+      iyy="" iyz=""
+      izz=""/>
+    </inertial>
+  </link> -->
+
+
+  <!-- Screw on which Slide Block acctuates -->
+  <link name = "Screw1">
+    <visual>
+      <origin xyz = "" rpy = ""/>
+      <geometry>
+        <cylinder radius = "0.0075" length = "0.25"/>
+      </geometry>
+        <material name = "red"/>
+      </visual>
+      <collision>
+        <origin xyz = "" rpy = ""/>
+        <geometry>
+          <cylinder radius = "0.0075" length = "0.25"/>
+        </geometry>
+          <material name = "red"/>
+      </collision>
+    <inertial>
+    <origin xyz = "" rpy = ""/>
+    <mass value="0.044228"/>
+    <inertia
+      ixx="" ixy="" ixz=""
+      iyy="" iyz=""
+      izz=""/>
+    </inertial>
+  </link>
+
+
+    <!-- M10 Screw inserted into Slide Block -->
+    <link name = "M10Screw1">
+      <visual>
+        <origin xyz = "" rpy = ""/>
+        <geometry>
+          <cylinder radius = "0.005" length = "0.1"/>
+        </geometry>
+          <material name = "red"/>
+        </visual>
+        <collision>
+          <origin xyz = "" rpy = ""/>
+          <geometry>
+            <cylinder radius = "0.005" length = "0.1"/>
+          </geometry>
+            <material name = "red"/>
+        </collision>
+      <inertial>
+      <origin xyz = "" rpy = ""/>
+      <mass value=""/>
+      <inertia
+        ixx="" ixy="" ixz=""
+        iyy="" iyz=""
+        izz=""/>
+      </inertial>
+    </link>
+
+
+    <!-- M10 Screw inserted through Knee -->
+    <link name = "M10ScrewKnee1">
+      <visual>
+        <origin xyz = "" rpy = ""/>
+        <geometry>
+          <cylinder radius = "0.005" length = "0.1471"/>
+        </geometry>
+          <material name = "red"/>
+        </visual>
+        <collision>
+          <origin xyz = "" rpy = ""/>
+          <geometry>
+            <cylinder radius = "0.005" length = "0.1471"/>
+          </geometry>
+            <material name = "red"/>
+        </collision>
+      <inertial>
+      <origin xyz = "" rpy = ""/>
+      <mass value=""/>
+      <inertia
+        ixx="" ixy="" ixz=""
+        iyy="" iyz=""
+        izz=""/>
+      </inertial>
+    </link>
+
+
+    <!-- M10 Screw Linkage -->
+    <link name = "M10Linkage1">
+      <visual>
+        <origin xyz = "" rpy = ""/>
+        <geometry>
+          <cylinder radius = "0.005" length = ""/>
+        </geometry>
+          <material name = "red"/>
+        </visual>
+        <collision>
+          <origin xyz = "" rpy = ""/>
+          <geometry>
+            <cylinder radius = "0.005" length = ""/>
+          </geometry>
+            <material name = "red"/>
+        </collision>
+      <inertial>
+      <origin xyz = "" rpy = ""/>
+      <mass value=""/>
+      <inertia
+        ixx="" ixy="" ixz=""
+        iyy="" iyz=""
+        izz=""/>
+      </inertial>
+    </link>
+
+
 
 
 
   <!-- JOINTS -->
+  <!-- Child's COG is referenced from the parent's origin -->
 
     <joint name = "dummy_joint" type = "fixed">
         <parent link = "openDog_body"/>
@@ -554,7 +867,6 @@
 </transmission>
 
 
-
     <joint name = "knee_joint_leg4" type = "revolute">
         <parent link = "upper_extrusion_leg4"/>
         <child link = "lower_extrusion_leg4"/>
@@ -573,6 +885,35 @@
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </actuator>
 </transmission>
+
+<!-- KNEE-LOWER EXTRUSION FIXED JOINTS  -->
+  <!-- KNEE-LOWER EXTRUSION FIXED JOINT 1 -->
+<joint name = "lowerex_knee_leg1" type = "fixed">
+      <parent link = "lower_extrusion_leg1"/>
+      <child link = "knee1"/>
+      <origin xyz = "0 0 0.7" rpy = "0 0 0"/>
+  </joint>
+
+  <!-- KNEE-LOWER EXTRUSION FIXED JOINT 2-->
+  <joint name = "lowerex_knee_leg2" type = "fixed">
+        <parent link = "lower_extrusion_leg2"/>
+        <child link = "knee2"/>
+        <origin xyz = "0 0 0.7" rpy = "0 0 0"/>
+    </joint>
+
+  <!-- KNEE-LOWER EXTRUSION FIXED JOINT 3 -->
+<<joint name = "lowerex_knee_leg3" type = "fixed">
+      <parent link = "lower_extrusion_leg3"/>
+      <child link = "knee3"/>
+      <origin xyz = "0 0 0.7" rpy = "0 0 0"/>
+  </joint>
+
+  <!-- KNEE-LOWER EXTRUSION FIXED JOINT 4 -->
+  <joint name = "lowerex_knee_leg4" type = "fixed">
+        <parent link = "lower_extrusion_leg4"/>
+        <child link = "knee4"/>
+        <origin xyz = "0 0 0.7" rpy = "0 0 0"/>
+    </joint>
 
 
 </robot>
