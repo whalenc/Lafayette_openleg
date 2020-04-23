@@ -83,8 +83,8 @@
     </inertial>
     </link>
 
-    <link name = "hip_tube_1">
-    	<visual>
+<!--     <link name = "hip_tube_1">
+<!--     	<visual>
     		<origin xyz = "0.0 0.0 0.0" rpy = "0 1.5708 0"/>
     		<geometry>
     			<cylinder length = "0.165" radius = "0.05715"/>
@@ -379,10 +379,10 @@
           iyy="0.000336333333333" iyz="0.0"
           izz="0.0128227083333"/>
     </inertial>
-	</link>
+	</link> -->
 
   <!-- knee links  -->
-    <link name = "knee1">
+<!--     <link name = "knee1">
       <visual>
         <origin xyz = "0 0 0" rpy = "0 0 0"/>
         <geometry>
@@ -405,7 +405,7 @@
           iyy="" iyz=""
           izz=""/>
       </inertial>
-   </link>
+   </link> -->
 
    <!-- <link name = "knee2">
      <visual>
@@ -485,7 +485,7 @@
 
   <!-- Slide Block Links -->
   <!-- Tibia -->
-  <link name = "SlideBlock1.1">
+<!--   <link name = "SlideBlock1.1">
     <visual>
       <origin xyz = "0 0 0" rpy = "0 0 0"/>
       <geometry>
@@ -508,10 +508,10 @@
           iyy="" iyz=""
           izz=""/>
       </inertial>
-  </link>
+  </link> -->
 
   <!-- Femur -->
-  <link name = "SlideBlock1.2">
+<!--   <link name = "SlideBlock1.2">
     <visual>
       <origin xyz = "0 0 0" rpy = "0 0 0"/>
       <geometry>
@@ -534,7 +534,7 @@
         iyy="" iyz=""
         izz=""/>
     </inertial>
-  </link>
+  </link> -->
 
   <!-- <link name = "SlideBlock2.1">
     <visual>
@@ -588,7 +588,7 @@
 
 
   <!-- Screw on which Slide Block acctuates -->
-  <link name = "Screw1">
+<!--   <link name = "Screw1">
     <visual>
       <origin xyz = "0 0 0" rpy = "0 0 0"/>
       <geometry>
@@ -616,7 +616,7 @@
 
     <!-- M10 Screw inserted into Slide Block -->
     <!-- Tibia -->
-    <link name = "M10ScrewTibia1.1">
+<!--     <link name = "M10ScrewTibia1.1">
       <visual>
         <origin xyz = "0 0 0" rpy = "0 0 0"/>
         <geometry>
@@ -664,10 +664,10 @@
           iyy="" iyz=""
           izz=""/>
       </inertial>
-    </link>
+    </link> --> -->
 
     <!-- Femur -->
-    <link name = "M10ScrewFemur1.1">
+<!--     <link name = "M10ScrewFemur1.1">
       <visual>
         <origin xyz = "0 0 0" rpy = "0 0 0"/>
         <geometry>
@@ -715,7 +715,7 @@
           iyy="" iyz=""
           izz=""/>
       </inertial>
-    </link>
+    </link> -->
 
     <!-- <link name = "M10Screw2.1">
       <visual>
@@ -744,7 +744,7 @@
 
 
     <!-- M10 Screw inserted through Knee -->
-    <link name = "M10Knee1.1">
+<!--     <link name = "M10Knee1.1">
       <visual>
         <origin xyz = "0 0 0" rpy = "0 0 0"/>
         <geometry>
@@ -796,7 +796,7 @@
 
 
     <!-- M10 Screw Linkage to Tibia -->
-    <link name = "M10LinkageTibia1.1">
+<!--     <link name = "M10LinkageTibia1.1">
       <visual>
         <origin xyz = "0 0 0" rpy = "0 0 0"/>
         <geometry>
@@ -844,10 +844,10 @@
           iyy="" iyz=""
           izz=""/>
       </inertial>
-    </link>
+    </link> -->
 
     <!-- M10 Screw Linkage to Femur -->
-    <link name = "M10LinkageFemur1.1">
+<!--     <link name = "M10LinkageFemur1.1">
       <visual>
         <origin xyz = "0 0 0" rpy = "0 0 0"/>
         <geometry>
@@ -895,13 +895,13 @@
           iyy="" iyz=""
           izz=""/>
       </inertial>
-    </link>
+    </link> -->
 
 
   <!-- JOINTS -->
   <!-- Child's COG is referenced from the parent's origin -->
 
-    <joint name = "dummy_joint" type = "fixed">
+<!--     <joint name = "dummy_joint" type = "fixed">
         <parent link = "openDog_body"/>
         <child link  = "dummy_mass"/>
         <origin xyz = "0 0 0.7" rpy = "0 0 0"/>
@@ -1086,15 +1086,15 @@
     <mechanicalReduction>1</mechanicalReduction>
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </actuator>
-</transmission>
+</transmission> --> -->
 
 
 <!-- KNEE-LOWER EXTRUSION FIXED JOINTS  -->
-<joint name = "lowerex_knee_leg1" type = "fixed">
+<!-- <joint name = "lowerex_knee_leg1" type = "fixed">
       <parent link = "lower_extrusion_leg1"/>
       <child link = "knee1"/>
       <origin xyz = "0 0 0" rpy = "0 0 0"/>
-  </joint>
+  </joint> -->
 
   <!-- <joint name = "lowerex_knee_leg2" type = "fixed">
         <parent link = "lower_extrusion_leg2"/>
@@ -1116,7 +1116,7 @@
 
 
     <!-- Knee-M10 Joint -->
-    <joint name = "kneeM10_1" type = "fixed">
+<!--     <joint name = "kneeM10_1" type = "fixed">
           <parent link = "knee1"/>
           <child link = "M10Knee1"/>
           <origin xyz = "0 0 0" rpy = "0 0 0"/>
@@ -1127,11 +1127,11 @@
             <child link = "M10Knee2"/>
             <origin xyz = "0 0 0" rpy = "0 0 0"/>
         </joint>
-
+ -->
 
     <!-- Slide Block-M10 -->
     <!-- Tibia -->
-    <joint name = "SlideBlockM10_1.1" type = "fixed">
+<!--     <joint name = "SlideBlockM10_1.1" type = "fixed">
           <parent link = "SlideBlock1.1"/>
           <child link = "M10Screw1.1"/>
           <origin xyz = "0 0 0" rpy = "0 0 0"/>
@@ -1141,10 +1141,10 @@
             <parent link = "SlideBlock1.1"/>
             <child link = "M10Screw1.2"/>
             <origin xyz = "0 0 0" rpy = "0 0 0"/>
-        </joint>
+        </joint> -->
 
       <!-- Femur-->
-      <joint name = "SlideBlockM10_1.3" type = "fixed">
+<!--       <joint name = "SlideBlockM10_1.3" type = "fixed">
             <parent link = "SlideBlock1.2"/>
             <child link = "M10Screw1.3"/>
             <origin xyz = "0 0 0" rpy = "0 0 0"/>
@@ -1154,11 +1154,11 @@
               <parent link = "SlideBlock1.2"/>
               <child link = "M10Screw1.4"/>
               <origin xyz = "0 0 0" rpy = "0 0 0"/>
-          </joint>
+          </joint> -->
 
 
     <!-- Slide Block M10 to Tibia Linkage -->
-    <joint name = "M10TibiaLinkage1.1" type = "revolute">
+<!--     <joint name = "M10TibiaLinkage1.1" type = "revolute">
         <parent link = "M10ScrewTibia1.1"/>
         <child link = "M10LinkageTibia1.1"/>
         <origin xyz="0 0 0" rpy="0 0 0 "/>
@@ -1172,11 +1172,11 @@
         <origin xyz="0 0 0" rpy="0 0 0 "/>
         <limit effort="5000"  lower="1.352" upper="2.8715" velocity="1.0"/>
         <axis xyz="0 0 0"/>
-    </joint>
+    </joint> -->
 
 
     <!-- Slide Block M10 to Femur Linkagec -->
-    <joint name = "M10FemurLinkage1.1" type = "revolute">
+<!--     <joint name = "M10FemurLinkage1.1" type = "revolute">
         <parent link = "M10ScrewFemur1.1"/>
         <child link = "M10LinkageFemur1.1"/>
         <origin xyz="0 0 0" rpy="0 0 0 "/>
@@ -1190,11 +1190,11 @@
         <origin xyz="0 0 0" rpy="0 0 0 "/>
         <limit effort="5000"  lower="1.352" upper="2.8715" velocity="1.0"/>
         <axis xyz="0 0 0"/>
-    </joint>
+    </joint> -->
 
 
     <!-- Knee M10 to Tibia Linkage -->
-    <joint name = "M10KneeLinkage1.1" type = "revolute">
+<!--     <joint name = "M10KneeLinkage1.1" type = "revolute">
         <parent link = "M10Knee1.1"/>
         <child link = "M10LinkageTibia1.1"/>
         <origin xyz="0 0 0" rpy="0 0 0 "/>
@@ -1210,7 +1210,7 @@
         <axis xyz="0 0 0"/>
     </joint>
 
-
+ -->
     <!-- Slide Block on Cyclinder -->
 
 
