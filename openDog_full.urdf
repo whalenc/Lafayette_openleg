@@ -642,79 +642,28 @@ d
 
     <!-- M10 Screw inserted into Slide Block -->
     <!-- Tibia -->
-    <!-- <link name = "M10ScrewTibia1.1">
+     <link name = "M10ScrewFemur1.1">
       <visual>
         <origin xyz = "0 0 0" rpy = "0 0 0"/>
         <geometry>
           <cylinder radius = "0.005" length = "0.05"/>
         </geometry>
-          <material name = "red"/>
+          <material name = "grey"/>
         </visual>
         <collision>
           <origin xyz = "0 0 0" rpy = "0 0 0"/>
           <geometry>
             <cylinder radius = "0.005" length = "0.05"/>
           </geometry>
-            <material name = "red"/>
+            <material name = "grey"/>
         </collision>
       <inertial>
         <origin xyz = "0 0 0" rpy = "0 0 0"/>
-        <mass value=""/>
+        <mass value="0"/>
         <inertia
-          ixx="" ixy="" ixz=""
-          iyy="" iyz=""
-          izz=""/>
-      </inertial>
-    </link>
-
-    <link name = "M10ScrewTibia1.2">
-      <visual>
-        <origin xyz = "0 0 0" rpy = "0 0 0"/>
-        <geometry>
-          <cylinder radius = "0.005" length = "0.05"/>
-        </geometry>
-          <material name = "red"/>
-        </visual>
-        <collision>
-          <origin xyz = "0 0 0" rpy = "0 0 0"/>
-          <geometry>
-            <cylinder radius = "0.005" length = "0.05"/>
-          </geometry>
-            <material name = "red"/>
-        </collision>
-      <inertial>
-        <origin xyz = "0 0 0" rpy = "0 0 0"/>
-        <mass value=""/>
-        <inertia
-          ixx="" ixy="" ixz=""
-          iyy="" iyz=""
-          izz=""/>
-      </inertial>
-    </link>
-
-    Femur 
-    <link name = "M10ScrewFemur1.1">
-      <visual>
-        <origin xyz = "0 0 0" rpy = "0 0 0"/>
-        <geometry>
-          <cylinder radius = "0.005" length = "0.05"/>
-        </geometry>
-          <material name = "red"/>
-        </visual>
-        <collision>
-          <origin xyz = "0 0 0" rpy = "0 0 0"/>
-          <geometry>
-            <cylinder radius = "0.005" length = "0.05"/>
-          </geometry>
-            <material name = "red"/>
-        </collision>
-      <inertial>
-        <origin xyz = "0 0 0" rpy = "0 0 0"/>
-        <mass value=""/>
-        <inertia
-          ixx="" ixy="" ixz=""
-          iyy="" iyz=""
-          izz=""/>
+          ixx="1" ixy="1" ixz="1"
+          iyy="1" iyz="1"
+          izz="1"/>
       </inertial>
     </link>
 
@@ -724,24 +673,75 @@ d
         <geometry>
           <cylinder radius = "0.005" length = "0.05"/>
         </geometry>
-          <material name = "red"/>
+          <material name = "grey"/>
         </visual>
         <collision>
           <origin xyz = "0 0 0" rpy = "0 0 0"/>
           <geometry>
             <cylinder radius = "0.005" length = "0.05"/>
           </geometry>
-            <material name = "red"/>
+            <material name = "grey"/>
         </collision>
       <inertial>
         <origin xyz = "0 0 0" rpy = "0 0 0"/>
-        <mass value=""/>
+        <mass value="0"/>
         <inertia
-          ixx="" ixy="" ixz=""
-          iyy="" iyz=""
-          izz=""/>
+          ixx="1" ixy="1" ixz="1"
+          iyy="1" iyz="1"
+          izz="1"/>
       </inertial>
-    </link> -->
+    </link> 
+
+     <!-- Femur  -->
+    <link name = "M10ScrewFemur1.3">
+      <visual>
+        <origin xyz = "0 0 0" rpy = "0 0 0"/>
+        <geometry>
+          <cylinder radius = "0.005" length = "0.05"/>
+        </geometry>
+          <material name = "grey"/>
+        </visual>
+        <collision>
+          <origin xyz = "0 0 0" rpy = "0 0 0"/>
+          <geometry>
+            <cylinder radius = "0.005" length = "0.05"/>
+          </geometry>
+            <material name = "grey"/>
+        </collision>
+      <inertial>
+        <origin xyz = "0 0 0" rpy = "0 0 0"/>
+        <mass value="0"/>
+        <inertia
+          ixx="1" ixy="1" ixz="1"
+          iyy="1" iyz="1"
+          izz="1"/>
+      </inertial>
+    </link> 
+ 
+    <link name = "M10ScrewFemur1.4">
+      <visual>
+        <origin xyz = "0 0 0" rpy = "0 0 0"/>
+        <geometry>
+          <cylinder radius = "0.005" length = "0.05"/>
+        </geometry>
+          <material name = "grey"/>
+        </visual>
+        <collision>
+          <origin xyz = "0 0 0" rpy = "0 0 0"/>
+          <geometry>
+            <cylinder radius = "0.005" length = "0.05"/>
+          </geometry>
+            <material name = "grey"/>
+        </collision>
+      <inertial>
+        <origin xyz = "0 0 0" rpy = "0 0 0"/>
+        <mass value="0"/>
+        <inertia
+          ixx="1" ixy="1" ixz="1"
+          iyy="1" iyz="1"
+          izz="1"/>
+      </inertial>
+    </link>  
 
     <!-- <link name = "M10Screw2.1">
       <visual>
@@ -776,7 +776,7 @@ d
         <geometry>
           <cylinder radius = "0.005" length = "0.1471"/>
         </geometry>
-          <material name = "red"/>
+          <material name = "grey"/>
         </visual>
         <collision>
           <origin xyz = "0 0 0" rpy = "0 0 0"/>
@@ -821,21 +821,21 @@ d
     </link>  -->
 
 
-    <!-- M10 Screw Linkage to Tibia
-   <link name = "M10LinkageTibia1.1">
+     M10 Screw Linkage to Tibia
+   <link name = "M10LinkageFemur1.1_1">
       <visual>
         <origin xyz = "0 0 0" rpy = "0 0 0"/>
         <geometry>
-          <cylinder radius = "0.005" length = "0.21"/>
+          <cylinder radius = "0.005" length = "0.105"/>
         </geometry>
-          <material name = "red"/>
+          <material name = "grey"/>
         </visual>
         <collision>
           <origin xyz = "0 0 0" rpy = "0 0 0"/>
           <geometry>
             <cylinder radius = "0.005" length = "0.21"/>
           </geometry>
-            <material name = "red"/>
+            <material name = "grey"/>
         </collision>
       <inertial>
         <origin xyz = "0 0 0" rpy = "0 0 0"/>
@@ -846,7 +846,31 @@ d
           izz="0"/>
       </inertial>
     </link>
-
+     <link name = "M10LinkageFemur1.1_2">
+      <visual>
+        <origin xyz = "0 0 0" rpy = "0 0 0"/>
+        <geometry>
+          <cylinder radius = "0.005" length = "0.105"/>
+        </geometry>
+          <material name = "grey"/>
+        </visual>
+        <collision>
+          <origin xyz = "0 0 0" rpy = "0 0 0"/>
+          <geometry>
+            <cylinder radius = "0.005" length = "0.21"/>
+          </geometry>
+            <material name = "grey"/>
+        </collision>
+      <inertial>
+        <origin xyz = "0 0 0" rpy = "0 0 0"/>
+        <mass value="0.1"/>
+        <inertia
+          ixx="0.1" ixy="0" ixz="0"
+          iyy="0" iyz="0"
+          izz="0"/>
+      </inertial>
+    </link>
+<!-- 
     <link name = "M10LinkageTibia1.2">
       <visual>
         <origin xyz = "0 0 0" rpy = "0 0 0"/>
@@ -870,7 +894,7 @@ d
           iyy="0" iyz="0"
           izz="0"/>
       </inertial>
-    </link>   -->
+    </link>    -->
 
     <!-- M10 Screw Linkage to Femur -->
     <!-- <link name = "M10LinkageFemur1.1">
@@ -1248,85 +1272,89 @@ d
 
 
     <!-- Slide Block-M10 -->
-    <!-- Tibia -->
-    <!-- <joint name = "SlideBlockM10_1.1" type = "fixed">
+    <!-- femur upper -->
+     <joint name = "SlideBlockM10_1.1" type = "fixed">
           <parent link = "SlideBlock1.1"/>
-          <child link = "M10Screw1.1"/>
-          <origin xyz = "0 0 0" rpy = "0 0 0"/>
-      </joint>
+          <child link = "M10ScrewFemur1.1"/>
+          <origin xyz = "0 -.05 0" rpy = "1.57 0 0"/>
+      </joint> 
 
-      <joint name = "SlideBlockM10_1.2" type = "fixed">
+       <joint name = "SlideBlockM10_1.2" type = "fixed">
             <parent link = "SlideBlock1.1"/>
-            <child link = "M10Screw1.2"/>
-            <origin xyz = "0 0 0" rpy = "0 0 0"/>
-        </joint> --> 
+            <child link = "M10ScrewFemur1.2"/>
+            <origin xyz = "0 .05 0" rpy = "1.57 0 0"/>
+        </joint>  
 
-      <!-- Femur
+      <!-- femur lower -->
       <joint name = "SlideBlockM10_1.3" type = "fixed">
             <parent link = "SlideBlock1.2"/>
-            <child link = "M10Screw1.3"/>
-            <origin xyz = "0 0 0" rpy = "0 0 0"/>
+            <child link = "M10ScrewFemur1.3"/>
+            <origin xyz = "0 -.05 0" rpy = "1.57 0 0"/>
         </joint>
 
-        <joint name = "SlideBlockM10_1.4" type = "fixed">
+         <joint name = "SlideBlockM10_1.4" type = "fixed">
               <parent link = "SlideBlock1.2"/>
-              <child link = "M10Screw1.4"/>
-              <origin xyz = "0 0 0" rpy = "0 0 0"/>
-          </joint> -->
+              <child link = "M10ScrewFemur1.4"/>
+              <origin xyz = "0 .05 0" rpy = "1.57 0 0"/>
+          </joint>  
 
 
-    <!-- Slide Block M10 to Tibia Linkage -->
-    <!-- <joint name = "M10TibiaLinkage1.1" type = "revolute">
-        <parent link = "M10ScrewTibia1.1"/>
-        <child link = "M10LinkageTibia1.1"/>
+    <!-- Slide Block M10 to upper femur Linkage -->
+<!--     
+     <joint name = "M10FemurLinkage1.1" type = "revolute">
+        <parent link = "M10ScrewFemur1.1"/>
+        <child link = "M10LinkageFemur1.1"/>
         <origin xyz="0 0 0" rpy="0 0 0 "/>
         <limit effort="5000"  lower="1.352" upper="2.8715" velocity="1.0"/>
         <axis xyz="0 0 0"/>
-    </joint>
-
+    </joint> -->
+<!-- 
     <joint name = "M10TibiaLinkage1.2" type = "revolute">
         <parent link = "M10ScrewTibia1.2"/>
         <child link = "M10LinkageTibia1.2"/>
         <origin xyz="0 0 0" rpy="0 0 0 "/>
         <limit effort="5000"  lower="1.352" upper="2.8715" velocity="1.0"/>
         <axis xyz="0 0 0"/>
-    </joint> --> 
+    </joint>   -->
 
 
-    <!-- Slide Block M10 to Femur Linkagec
+     <!-- Slide Block M10 to Femur Linkagec -->
     <joint name = "M10FemurLinkage1.1" type = "revolute">
-        <parent link = "M10ScrewFemur1.1"/>
-        <child link = "M10LinkageFemur1.1"/>
-        <origin xyz="0 0 0" rpy="0 0 0 "/>
+        <parent link = "M10ScrewFemur1.3"/>
+        <child link = "M10LinkageFemur1.1_1"/>
+        <origin xyz="0 0 0" rpy="1.57 0 0 "/>
         <limit effort="5000"  lower="1.352" upper="2.8715" velocity="1.0"/>
-        <axis xyz="0 0 0"/>
+        <axis xyz="0 1 0"/>
     </joint>
 
-    <joint name = "M10FemurLinkage1.2" type = "revolute">
+    <!-- <joint name = "M10FemurLinkage1.2" type = "revolute">
         <parent link = "M10ScrewFemur1.2"/>
         <child link = "M10LinkageFemur1.2"/>
         <origin xyz="0 0 0" rpy="0 0 0 "/>
         <limit effort="5000"  lower="1.352" upper="2.8715" velocity="1.0"/>
-        <axis xyz="0 0 0"/>
-    </joint> -->
+        <axis xyz="0 0 0"/> 
+        <joint>
+        -->
+
 
 
      <!-- Knee M10 to Tibia Linkage -->
-    <!-- <joint name = "M10KneeLinkage1.1" type = "revolute">
+     <joint name = "M10KneeLinkage1.1" type = "revolute">
         <parent link = "M10Knee1.1"/>
-        <child link = "M10LinkageTibia1.1"/>
-        <origin xyz="0 .3 0" rpy="0 0 0 "/>
+        <child link = "M10LinkageFemur1.1_2"/>
+        <origin xyz="0 0 0.025" rpy="1.57 0 0 "/>
         <limit effort="5000"  lower="1.352" upper="2.8715" velocity="1.0"/>
-        <axis xyz="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <mimic joint="M10FemurLinkage1.1" multiplier="-1" offset="0" />
     </joint>
-
+<!-- 
      <joint name = "M10KneeLinkage1.2" type = "revolute">
         <parent link = "M10Knee1.1"/>
         <child link = "M10LinkageTibia1.2"/>
         <origin xyz="0 0 0" rpy="0 0 0 "/>
         <limit effort="5000"  lower="1.352" upper="2.8715" velocity="1.0"/>
         <axis xyz="0 0 0"/>
-    </joint>    -->
+    </joint>     -->
 
 <!-- Screwbox to femur -->
 <joint name = "Screwbox_Femur1.1" type = "fixed">
@@ -1395,4 +1423,4 @@ d
 
 
 
-</robot>
+</robot> 
